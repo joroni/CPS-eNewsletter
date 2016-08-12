@@ -8,7 +8,7 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ko.checkitout"
+            "PACKAGE_NAME": "com.ko.cpsenews"
         }
     },
     "dependent_plugins": {}
