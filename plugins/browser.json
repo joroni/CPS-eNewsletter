@@ -7,15 +7,25 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+        "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.ko.cpsnews"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.ko.cpsnews"
         },
         "cordova-plugin-media": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.ko.cpsnews"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ko.cpsnews"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ko.cpsnews"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ko.cpsnews"
+        }
+    }
 }
