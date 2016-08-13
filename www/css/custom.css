@@ -122,7 +122,7 @@ body.archive .page-container .page-header {
 }
 
 
-body.cover .page-container .page-header {
+/*body.cover .page-container .page-header {
     border-bottom: 0 none;
     float: left;
     height: 80px !important;
@@ -137,9 +137,44 @@ body.cover .page-container .page-header .page-header-holder .navigation-toggle {
     position: absolute !important;
     top: 5px !important;
     z-index: 20040 !important;
+}*/
+
+
+
+body.archive .page-container .page-header {
+    border-bottom: 0 none;
+    float: none !important;
+    height: 80px !important;
+    margin: 0;
+    padding: 10px 15px !important;
+    width: 100%;
+}
+
+.page-container .page-header {
+    border-bottom: 0 none;
+    float: left;
+    height: 80px !important;
+    margin: 0;
+    padding: 10px 15px !important;
+    width: 100%;
+}
+
+body.cover .page-container .page-header .page-header-holder .navigation-toggle,
+body.user-profile .page-container .page-header .page-header-holder .navigation-toggle,
+body.settings .page-container .page-header .page-header-holder .navigation-toggle,
+body.template .page-container .page-header .page-header-holder .navigation-toggle,
+body.login .page-container .page-header .page-header-holder .navigation-toggle,
+body.register .page-container .page-header .page-header-holder .navigation-toggle{
+    float: none !important;
+    left: 1px !important;
+    position: absolute !important;
+    top: 5px !important;
 }
 
 
+body.register .login-container {
+    background: #fff none !important;
+}
 .modal {
     bottom: 0;
     left: 0;
@@ -173,7 +208,22 @@ body.cover .page-container .page-header .page-header-holder .navigation-toggle {
 .button {
 	display: inline-block
 }
+
 .button div {
+    background: #fff none repeat scroll 0 0;
+    border-color: #006;
+    border-radius: 0;
+    border-style: outset;
+    border-width: 0;
+    display: table-cell;
+    height: 0;
+    margin: 0 auto;
+    padding: 0 10px;
+    vertical-align: middle;
+    width: auto;
+}
+
+footer .button div {
     background: #fff none repeat scroll 0 0;
     border-color: #006;
     border-radius: 0;
@@ -216,7 +266,7 @@ body.cover .page-container .page-header .page-header-holder .navigation-toggle {
 
 
 body.cover .page-container .padding-v-30 {
-    padding: 30px 15px !important;
+    padding: 10px !important;
 }
 
 .page-container .page-content .page-content-wrap .page-content-holder .thumbnails .thumbnail-item .thumbnail-info {
@@ -265,7 +315,7 @@ footer {
     float: none !important;
     padding: 0;
     position: fixed;
-    height: 420px !important;
+    height: 100%;
     top: 80px !important;
     width: 100%;
     overflow-x: hidden;
@@ -286,5 +336,119 @@ footer {
     padding-left: 5px !important;
     padding-right: 5px !important;
     position: relative;
+}
+
+
+div.horizon-item div.blog-content {
+	width:320px;
+}
+div.horizon-item div.blog-content p {
+	min-width:100%;
+	max-width:100%;
+}
+
+ul.flex-direction-nav li {
+	height:50px !important;
+}
+
+.flex-direction-nav a::before {
+    color: rgba(0, 0, 0, 0.8);
+   padding-top:0 !important;
+   margin-top:0 !important;
+    display: inline-block;
+    font-family: "flexslider-icon";
+    font-size: 20px !important;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+div.flexslider ol.flex-control-nav.flex-control-paging {
+	position:fixed !important;
+	bottom: 60px !important;
+	margin-left:-20px;
+	margin-right:-20px;
+}
+
+body.cover .flexslider {
+    background: #fff none repeat scroll 0 0;
+    border: 4px solid #fff;
+    border-radius: 4px;
+    margin: 0 0 -60px !important;
+    position: relative;
+}
+
+.modal-footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 5px 5px 0 !important;
+    text-align: right;
+}
+
+
+.modal-body {
+    max-height: 320px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px 15px !important;
+}
+
+
+body.login .login-container .login-box .login-logo {
+    background: rgba(0, 0, 0, 0) url("../img/logo.png") no-repeat scroll left center / cover ;
+    float: none;
+    height: 50px;
+    margin: 0 auto;
+    width: 180px;
+}
+
+
+body.login .login-container {
+    background: #fefefe none repeat scroll 0 0 !important;
+    float: left;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+.form-control {
+    border-radius: 0px !important;
+    display: block;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+	text-transform:uppercase !important;
+}
+
+.btn {
+	text-transform:uppercase !important;
+}
+
+input, password, textarea {
+	
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(209,0,0,0.5) !important;
+    cursor: pointer;
+}
+
+.login-container .login-box .login-body {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    border-radius: 0px;
+    float: left;
+    margin-top: 20%;
+    padding: 20px;
+    width: 100%;
+}
+
+.btn.btn-login {
+	background-color: rgba(209,0,0,0.9) !important;
+	 border: 1px solid rgba(209,0,0,1) !important;
+	color: #fff !important;
+}
+
+
+.page-content-holder .page-title {
+    padding: 0 10px !important;
+    position: relative;
+}
+
+.btn-link {
+	color: #d10000 !important;
 }
 

@@ -1,3 +1,9 @@
+$(window).load(function() {
+           $(".loader").fadeOut("slow");
+        });
+
+
+
 $(document).ready(function(){
     
     // click outside spy
@@ -19,12 +25,6 @@ $(document).ready(function(){
         $(".mix-grid").mixItUp();  
     // end MixItUp
     
-    // animate on scroll
-    $(".navigation-back-button").click(function(){
-        window.location = "index.html";       
-    });
-	
-
     // end animate on scroll
     
 });
@@ -81,3 +81,27 @@ function navController(){
     });    
     
 }// end navigation controller 
+
+// animate on scroll
+    $("#btnBack").click(function(){
+                    window.location = "index.html";
+                    });
+
+    $("#btnRegister").click(function(){
+                    window.location = "register.html";
+                    });
+
+    $("#btnLogin").click(function(){
+                    window.location = "login.html";
+                    });
+
+    $("#btnAbout").click(function(){
+                    window.location = "about.html";
+                    });
+
+    $("#btnSettings").click(function(){
+                     window.location = "settings.html";
+                     });
+
+
+    
